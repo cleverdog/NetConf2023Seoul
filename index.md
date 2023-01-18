@@ -17,13 +17,14 @@ Let's start developing Blazor applications with "high performance" tuning!
 
 # 자기소개
 
-**Motoki Nakae**
+**모토키 나카에**
 
 ![bg 90% right:30%](./b65b1eb0079f5b1b925b6d3da53c0fe3.jpg)
 
-Solutions Consultant at Infragistics.
-I am solving customers’ UI/UX problems with our knowledge and products, especially about web applications every day.
-Also known as a "dog lover".
+인프라지스틱스 솔루션 컨설턴트
+“고성능" 튜닝으로 Blazor 애플리케이션 개발을 시작해 봅시다!
+
+"강아지 애호가" 입니다.
 
 ![width:40](./Circle-icons-mail.svg.png) <small>MNakae@infragistics.com</small>, <small>ESEA@infragistics.com</small>
 ![width:40](./Twitter_Social_Icon_Circle_Color.png.twimg.1920.png) <small>@Kashikoinu</small>
@@ -46,17 +47,17 @@ Also known as a "dog lover".
 
 <div>
 
-### Ken Azuma
+### 켄 아즈마
 
-CEO at Infragstics JAPAN
+인프라지스틱스 일본 지사 대표
 
 </div>
 
 <div>
 
-### Dongsu Jo
+### 조동수
 
-Sales Manager, ESEA
+세일즈 매니저, 아시아
 
 </div>
 
@@ -64,14 +65,14 @@ Sales Manager, ESEA
 
 ---
 
-# Infragistics
+# 인프라지스틱스
 
 <div style="text-align:center">
 
 ![width:1000](./sampleapps.png)
 
 </div>
-We Infragistics provides well designed and high functional UI controls and components for developers over 30 years.
+저희 인프라지스틱스는 30년동안 개발자를 위해 기능이 뛰어난 UI 컨트롤과 컴포넌트를 제공하고 있습니다.
 
 ---
 
@@ -92,20 +93,20 @@ We Infragistics provides well designed and high functional UI controls and compo
 
 ---
 
-# What's happening in Japan
+# 일본의 현 상황
 
 <small>
 
-## Demand of Blazor was much increased 2022
+## 2022년에 Blazor 수요 대폭 증가하였습니다.
 
 </small>
 
-One of common scenario:
+예시 하나를 소개해드리겠습니다.:
 
-- The developer works for implementing desktop application for the system inside a plant.
-- They are facing new request that about monitoring system to see a status of plant operation for managers.
-- Since the manager have to move around a lot during the job, they want a web application to access from anywhere.
-- Performance is important.
+- 한 일본 개발자가 공장 내부의 시스템을 위한 데스크톱 애플리케이션을 구현하기 위해 작업하였습니다.
+- 하지만 개발자의 관리자를 위해 공장 운영 상태를 볼 수 있는 모니터링 시스템에 대한 새로운 요청을 받았습니다..
+- 이 관리자는 작업 중에 많이 이동해야 하므로 어디에서나 액세스할 수 있는 웹 애플리케이션을 원하고 있습니다.
+- 하지만 성능도 중요합니다
 
 <style scoped>
 li {
@@ -115,27 +116,27 @@ li {
 
 ---
 
-# Today's Topics
+# 오늘의 주제
 
-- The reason why I recommend you Blazor as the web development framework.
-- The points you should take care for web application as performance perspective.
-- Let's start to create a new Blazor web application with performance tuning.
-- What if more complex functional UI components are needed.
-
----
-
-# Why you should choice Blazor
-
-- You are C# developer.
-- You are familiar with Blazor Server.
-- You can create latest SPA web application.
-- Document and showcase are incresing day by day.
-- Microsoft is paying a lot of attention to Blazor.
-- A lot of library vendors were adopted Blazor including Infragistics.
+- 웹 개발 프레임워크로 Blazor를 추천하는 이유입니다.
+- 성능 관점에서 웹 애플리케이션을 관리할 때 주의해야 할 사항들을 알려드리겠습니다.
+- “고성능" 튜닝으로 Blazor 애플리케이션 개발을 시작해보겠습니다.
+- 더 복잡한 기능적 UI 컴포넌트가 필요한 경우 어떻게 해야할지 알려드리겠습니다.
 
 ---
 
-# Time to start Blazor!
+# Blazor를 선택해야 하는 이유
+
+- 당신은 "C# 개발자"입니다.
+- Blazor 서버에 익숙합니다.
+- 최신 SPA 웹 어플리케이션을 생성할 수 있습니다.
+- 문서와 쇼케이스들이 나날이 증가하고 있습니다.
+- Microsoft에서 Blazor에 많은 관심을 기울이고 있습니다.
+- 저희 인프라지스틱스를 포함하여 많은 라이브러리 공급업체가 Blazor를 채택했습니다.
+
+---
+
+# 이제 Blazor를 시작할 시간입니다!
 
 ![bg right:40% 80%](./ue_mezasu_man.png)
 
@@ -148,7 +149,7 @@ h1 {
 
 ---
 
-# <!-- fit -->Web application performance
+# <!-- fit -->웹 어플리케이션 성능
 <style scoped>
 * {
     text-align:center;
@@ -158,18 +159,18 @@ h1 {
 
 ---
 
-# <!-- fit -->Three dimensions of web app performance
+# <!-- fit -->웹 앱 성능의 세 가지 포인트
 
 <small>
 
-## 1. Load Time Performance
+## 1. 로드 시간 성능
 
 </small>
 
-- How fast the web application load.
-- For a desktop app, the time to excute application and be able to start interaction for user.
-- To measure this performance, I suggest your use the Lighthouse.
-- You should check "First Contentful Paint" metrics firstly.
+- 웹 애플리케이션이 로드되는 속도입니다.
+- 데스크톱 앱의 경우 애플리케이션을 실행하고 사용자와 상호작용을 시작할 수 있는 시간입니다.
+- 이 성능을 측정하려면 Lighthouse를 사용하는 것이 좋습니다.
+- 먼저 "First Contentful Paint" 지표를 확인해야 합니다.
 
 ---
 
@@ -183,7 +184,7 @@ h1 {
 </style>
 ---
 
-# To reduce the Load Time
+# 로드 시간을 줄이려면
 
 <table>
     <thead>
@@ -201,19 +202,19 @@ h1 {
         </tr>
         <tr>
             <th rowspan="4">Blazor WebAssembly</th>
-            <td>Use Brotli to compress files.(<a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/webassembly?view=aspnetcore-7.0#customize-how-boot-resources-are-loaded">document</a>)</td>
+            <td>Brotli를 사용하여 파일을 압축합니다.(<a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/webassembly?view=aspnetcore-7.0#customize-how-boot-resources-are-loaded">document</a>)</td>
             <td>80%</td>
         </tr>
         <tr>
-            <td>Turn on IL trimming to reduce the size of published output.(<a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/configure-trimmer?view=aspnetcore-7.0">document</a>)</td>
+            <td>게시된 출력 크기를 줄이기 위해 IL 트리밍을 켭니다.(<a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/host-and-deploy/configure-trimmer?view=aspnetcore-7.0">document</a>)</td>
             <td>44%</td>
         </tr>
         <tr>
-            <td>Installing a wasm-tools.(<a href="https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-net-6-rc-2/#native-dependencies-support-for-blazor-webassembly-apps">document</a>)</td>
+            <td>wasm-tools 설치합니다.(<a href="https://devblogs.microsoft.com/dotnet/asp-net-core-updates-in-net-6-rc-2/#native-dependencies-support-for-blazor-webassembly-apps">document</a>)</td>
             <td>7%</td>
         </tr>
         <tr>
-            <td>If possible, cut the globalization and TimeZone capability.(document <a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/performance?view=aspnetcore-7.0#minimize-app-download-size">1</a> / <a href="https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization">2</a>)</td>
+            <td>가능하면 세계화 및 타임존 기능을 사용하시지 마세요(document <a href="https://learn.microsoft.com/en-us/aspnet/core/blazor/performance?view=aspnetcore-7.0#minimize-app-download-size">1</a> / <a href="https://learn.microsoft.com/en-us/dotnet/core/runtime-config/globalization">2</a>)</td>
             <td>37%</td>
         </tr>
     </tbody>
@@ -227,24 +228,24 @@ table {
 
 ---
 
-# <!-- fit -->Three dimensions of web app performance
+# <!-- fit -->웹 앱 성능의 세 가지 포인트
 
 <small>
 
-## 2. Run Time Performance
+## 2. 런타임 성능
 
 </small>
 
-- How responsive the web app is to user interactions.
-- Chrome developer tools is good to identify performance bottlenecks.
-- Some guidelines to improve run time performance:
+- 웹 앱이 사용자 상호 작용에 얼마나 반응하는지 봐야합니다.
+- Chrome 개발자 도구는 성능 병목 현상을 식별하는 데 유용합니다.
+- 런타임 성능을 개선하기 위한 몇 가지 가이드들이 있습니다:
 
-    - Less than 1500 nodes in total. The maximum depth is 32 nodes. No parent node has more than 60 child nodes.
-    - Properly size images, and lazy load images.
+    - 총 노드 수는 1500개 미만이어야합니다.  최대 깊이는 32노드이어야합니다.  상위 노드에는 60개 이상의 하위 노드가 없어야합니다
+    - 이미지 크기를 적절하게 조정하거나 lazy 로드 이미지여야 합니다
 
 ---
 
-# Chrome developer tools
+# 크롬 개발자 툴
 
 <div style="text-align:center">
 
@@ -260,40 +261,41 @@ div {
 
 ---
 
-# <!-- fit -->Three dimensions of web app performance
+# <!-- fit -->웹 앱 성능의 세 가지 포인트
 
 <small>
 
-## 2. Run Time Performance
+## 2. 런타임 성능
 
 </small>
 
-- How responsive the web app is to user interactions.
-- Chrome developer tools is good to identify performance bottlenecks.
-- Some guidelines to improve run time performance:
+- 웹 앱이 사용자 상호 작용에 얼마나 반응하는지 봐야합니다.
+- Chrome 개발자 도구는 성능 병목 현상을 식별하는 데 유용합니다.
+- 런타임 성능을 개선하기 위한 몇 가지 가이드들이 있습니다.:
 
-    - Less than 1500 nodes in total. The maximum depth is 32 nodes. No parent node has more than 60 child nodes.
-    - Properly size images, and lazy load images.
+    - 총 노드 수는 1500개 미만이어야합니다.  최대 깊이는 32노드이어야합니다.  상위 노드에는 60개 이상의 하위 노드가 없어야합니다
+    - 이미지 크기를 적절하게 조정하거나 lazy 로드 이미지여야 합니다
 
 ---
 
-# <!-- fit -->Three dimensions of web app performance
+# <!-- fit -->웹 앱 성능의 세 가지 포인트
 
 <small>
 
-## 3. Soft Performance
+## 3. 부드러운 성능
 
 </small>
 
-This dimension is not easy to talk, hard to measure, this is related to User Experience for example:
+이 특징은 말하기 쉽지 않고 측정하기도 어렵습니다. 
+예를 들어 사용자 경험과 관련이 있습니다:
 
-- How easy it is for your user to find and navigate to the feature they want to use.
-- How appealing the look and feel of your application is.
-- How good the error messages your software produces to understand what the end user did wrong.
+사용자가 사용하려는 기능을 쉽게 찾고 탐색할 수 있어야합니다.
+애플리케이션의 모양과 느낌이 얼마나 매력적인지 알아야합니다.
+엔드유저가 무엇을 잘못했는지 이해하기 위해 소프트웨어가 생성하는 오류 메시지가 얼마나 좋은지알아야합니다.
 
 ---
 
-# <!-- fit -->Tips of Web application performance
+# <!-- fit -->웹 애플리케이션 성능 팁
 <style scoped>
 * {
     text-align:center;
@@ -303,14 +305,15 @@ This dimension is not easy to talk, hard to measure, this is related to User Exp
 
 ---
 
-# Component Virtualization
+# 컴포넌트 가상화
 
-Virtualization is a technique for limiting UI rendering to just the parts that are currently visible.
+가상화란 UI 렌더링을 현재 보이는 부분으로만 제한하는 기술입니다.
 
-- You can use this technique for huge amount of looping content, like list, card, table.
-- With calculating the position of scroll, just rendering necessary DOM inside a viewable area.
-- When rendered DOM go outside from viewable area, it going to be destroyed.
-- This is an out-of-the-box function for Blazor.
+- 목록, 카드, 테이블과 같은 방대한 양의 반복 콘텐츠에 이 기술을 사용할 수 있습니다.
+- 스크롤 위치를 계산하여 가시 영역 내에 필요한 DOM을 렌더링하기만 하면 됩니다.
+- 렌더링된 DOM은 가시 영역 밖으로 나가면 파괴됩니다.
+- 이것이 Blazor의 기본 기능입니다.
+
 
 ---
 
@@ -318,7 +321,7 @@ Virtualization is a technique for limiting UI rendering to just the parts that a
 
 ---
 
-# <!-- fit -->Let's make virtulized table with 10k items
+# <!-- fit -->10k 아이템으로 가상화 테이블을 만들어 봅시다
 
 ```html
 <table>
@@ -349,11 +352,11 @@ code {
 
 ---
 
-# What happens if you don't virtulize?
+# 가상화를 하지 않으면 어떻게 됩니까?
 
 <small>
 
-## With 10k items
+## 10,000 아이템
 
 </small>
 
@@ -373,7 +376,7 @@ div {
 
 <small>
 
-## With 2.5k items
+## 2,500 아이템
 
 </small>
 
@@ -390,7 +393,7 @@ h2 {
 
 ---
 
-# Let's look at the result of virtulization
+# 가상화의 결과를 봅시다
 <style scoped>
 * {
     text-align:center;
@@ -408,7 +411,7 @@ h2 {
 
 ---
 
-# <!-- fit -->You need more complex functional UI?
+# <!-- fit -->더 복잡한 기능 UI가 필요하십니까?
 <style scoped>
 * {
     text-align:center;
@@ -418,14 +421,15 @@ h2 {
 
 ---
 
-# To keep both functionality and performance is so difficult
+# 기능과 성능을 모두 유지하는 것은 매우 어렵습니다.
 
-- Feature request that never ends.
+- 가능에 대한 요청은 끝나지가 않습니다.
 
-    - Sorting, Filtering, To register the short cut and so on.
+    - 정렬, 필터링, 바로 가기 등록 등등이 있죠..
 
-- The difficulty of performance tuning increase for functional UI cotrols.
-- Too hard to navigate the end user to each feature, easily produce bad user experience.
+- 기능적 UI 컨트롤에 대한 성능 조정의 어려움이 증가합니다.
+- 엔드유저가 각 기능을 탐색하기가 너무 어렵고 좋지 않은 사용자 경험을 만듭니다.
+
 
 ---
 
@@ -437,18 +441,18 @@ _backgroundColor: #202020
 
 ---
 
-# What we have done for customer in Japan.
+# 일본에서 저희가 고객을 위해 한일
 
-- Supported them to adopt Blazor as blandnew framework.
-- Provided the training video to learn Blazor for biginner.
-- Solved their UI requirements trough our controls.
-- Provided consultation service.
+- Blazor를 새로운 프레임워크로 채택하도록 지원했습니다.
+- 초보 개발자를 위해 Blazor를 배우기 위한 교육 비디오를 제공했습니다.
+- 컨트롤을 통해 UI 요구 사항을 해결했습니다.
+- 컨설팅 서비스를 제공합니다.
 
 ![bg right:30% 100%](./internet_school_e-learning_man.png)
 
 ---
 
-# Takeaway
+# 마지막으로
 
 <style scoped>
 div {
@@ -462,8 +466,8 @@ li {
 
 <div>
 
-- You don't need to hesitate to Blazor now, let's try to start!
-- Handle three kind of dimensions for performance!
-- If complex UI is require, rely on professional like Infragistics!
+- 망설일 필요 없이 지금 Blazor로 시작해보세요!
+- 성능을 위해 세 종류의 문제를 처리하십시오!
+- 복잡한 UI가 필요한 경우 저희 인프라직스틱스와 같은 전문가에게 의존하십시오!
 
 </div>
