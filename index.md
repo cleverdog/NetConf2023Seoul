@@ -11,7 +11,7 @@ marp: true
 
 # **.NET Conf 2023 <br>x Seoul**
 
-Let's start developing Blazor applications with "high performance" tuning!
+“고성능" 튜닝으로 Blazor 애플리케이션 개발을 시작해 봅시다!
 
 ---
 
@@ -321,7 +321,7 @@ div {
 
 ---
 
-# <!-- fit -->10k 아이템으로 가상화 테이블을 만들어 봅시다
+# <!-- fit -->10,000 아이템으로 가상화 테이블을 만들어 봅시다
 
 ```html
 <table>
