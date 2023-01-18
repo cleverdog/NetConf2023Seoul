@@ -15,7 +15,7 @@ Let's start developing Blazor applications with "high performance" tuning!
 
 ---
 
-# Self Introduction
+# 자기소개
 
 **Motoki Nakae**
 
