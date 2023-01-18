@@ -197,7 +197,7 @@ h1 {
     <tbody>
         <tr>
             <th>Blazor Server</th>
-            <td>Basically, you don't have to care.</td>
+            <td>기본적으로 신경 쓸 필요가 없습니다.</td>
             <td>-</td>
         </tr>
         <tr>
